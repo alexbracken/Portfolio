@@ -1,0 +1,9 @@
+{
+    "name": "Plangent",
+    "description": "Loud, reverberating, and often melancholy",
+    "author": "Alex Bracken",
+    "license": "MIT",
+    "tooltips": {
+        "+main": "The main content of the page"
+    }
+}
