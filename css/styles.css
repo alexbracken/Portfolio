@@ -154,6 +154,11 @@ p{
 
 
 
+.navbar-brand a span{
+font-weight: 800;
+font-size: 1.2rem;
+}
+
 .title{
     color: black;
 }

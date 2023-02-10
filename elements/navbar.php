@@ -1,8 +1,8 @@
 <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 		<div class="navbar-item">
-			<a class="button" href="/">
-				<span>AB</span>
+			<a href="/">
+				<span>Alex Bracken</span>
 			</a>
 		</div>
 		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
