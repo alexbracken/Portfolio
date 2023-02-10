@@ -152,11 +152,13 @@ p{
     width: 33.333%;
 }
 
-
+.navbar-brand a{
+    color: black;
+}
 
 .navbar-brand a span{
 font-weight: 800;
-font-size: 1.2rem;
+font-size: 1.5rem;
 }
 
 .title{
