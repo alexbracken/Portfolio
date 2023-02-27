@@ -5,6 +5,7 @@ body{
 }
 
 .body-container{
+    min-height: 100vh;
     padding-bottom: 4rem;
 }
 
