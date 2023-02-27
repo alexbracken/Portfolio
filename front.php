@@ -32,7 +32,6 @@
     </section>
 
 
-
 <@ newPagelist{
     type: 'children',
     filter: '@{?filter}',
