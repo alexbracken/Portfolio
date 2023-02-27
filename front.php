@@ -41,5 +41,6 @@
 <div class="post-grid-container section">
     <@ elements/post-grid.php @>
 </div>
+</div>
 <@ elements/logo-animation.php @>
 <@ elements/footer.php @>
