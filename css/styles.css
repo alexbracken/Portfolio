@@ -308,12 +308,11 @@ font-size: 1.5rem;
     visibility: visible;
     width: 100%;
     transition: all 0.2s ease-in-out;
-    padding-top: 0.7rem;
+    padding-top: 1rem;
 }
 
 .project-container{
     position: relative;
-    overflow: hidden;
 }
 
 .project-info-container{
