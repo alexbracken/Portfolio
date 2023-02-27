@@ -22,7 +22,7 @@
             </div>
         </div>
     <@ end @>
-</div>
+    
 <div class="container">
     <div class="grid">
         <div class="grid-sizer"></div>
