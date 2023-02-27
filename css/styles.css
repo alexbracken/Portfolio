@@ -5,12 +5,9 @@ body{
 }
 
 .body-container{
-    min-height: calc(100% - 200px);
+    padding-bottom: 4rem;
 }
 
-.footer{
-    height: 200px;
-}
 
 #blank .div{
     height: 4000px;
