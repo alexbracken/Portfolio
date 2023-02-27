@@ -22,7 +22,7 @@
             </div>
         </div>
     <@ end @>
-    
+
 <div class="container">
     <div class="grid">
         <div class="grid-sizer"></div>
@@ -53,7 +53,7 @@
                                         @{:medium} 2x,
                                         @{:large} 3x,
                                         @{:xlarge} 4x"
-                                    data-src="@{ :file }" 
+                                    src="@{ :file }" 
                                     alt="@{ :caption }">
                                 </img>
                             <@ end @>
