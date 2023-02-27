@@ -1,3 +1,4 @@
+<div class="wrapper">
 <@ elements/header.php @>
     <section id="intro" class="hero section">
         <div class="hero-body has-text-centered">
