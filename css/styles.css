@@ -299,6 +299,10 @@ font-size: 1.5rem;
     margin: 1rem;
 }
 
+div.project-info title{
+    font-size: 1.2rem;
+}
+
 .project-thumbnail{
     width: 100%;
     background-color: #fff;

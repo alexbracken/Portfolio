@@ -61,7 +61,7 @@
                     </div>
                     <div class="project-info">
                         <div class="project-info-container">
-                            <h2 class="title is-4">
+                            <h2 class="title">
                                 <a class="link" href="@{url}">@{title}</a>
                             </h2>
                             <div class="tags">
