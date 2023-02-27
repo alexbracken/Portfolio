@@ -2,7 +2,14 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    min-height: 100vh;
+}
+
+.body-container{
+    min-height: calc(100% - 200px);
+}
+
+.footer{
+    height: 200px;
 }
 
 #blank .div{
