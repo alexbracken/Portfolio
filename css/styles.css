@@ -190,9 +190,6 @@ am-img img{
     display: inline-block;
 }
 
-.project-info-container{
-    position: relative;
-}
 
 .arrow{
     float: right;
@@ -326,16 +323,11 @@ font-size: 1.5rem;
 
 
 .project-info{
-    position: absolute;
     padding: 1rem;
     background-color: #fff;
-    bottom: -30%;
 }
 
 
-.project-container:hover .project-info{
-    bottom: 0;
-}
 
 .gallery img{
     transition: all 0.2s ease-in-out;
