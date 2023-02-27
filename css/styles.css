@@ -9,7 +9,9 @@ body{
     padding-bottom: 4rem;
 }
 
-
+footer{
+    padding-bottom: 3rem;
+}
 #blank .div{
     height: 4000px;
 }
