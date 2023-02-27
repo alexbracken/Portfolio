@@ -2,6 +2,7 @@
 This template uses includes for elements that might be used also in other templates
 such as the header, navbar and footer markup. 
 #>
+<div class="body-container">
 <@ elements/header.php @>
 <@ elements/navbar.php @>
 
