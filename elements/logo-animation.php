@@ -7,7 +7,7 @@ window.onload = function () {
         loadAnimation.play()
         sessionStorage.setItem("hasPlayed", true);
     }
-}
+};
 
 
 var grid = document.querySelector('.grid');
