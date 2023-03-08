@@ -1,11 +1,13 @@
 <script>
+
+var loadAnimation = gsap.fromTo(".letter", {y: 30, opacity: 0}, {y: 0, opacity: 1, stagger: 0.05, ease: "elastic", duration: 2, delay: 0.5});
+
 window.onload = function () {
     if (sessionStorage.getItem("hasPlayed") === null) {
-        var loadAnimation = gsap.fromTo(".letter", {y: 30, opacity: 0}, {y: 0, opacity: 1, stagger: 0.05, ease: "elastic", duration: 2, delay: 0.5});
         loadAnimation.play()
         sessionStorage.setItem("hasPlayed", true);
     }
-}
+};
 
 
 var grid = document.querySelector('.grid');
