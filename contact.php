@@ -12,9 +12,9 @@
 }
 </script>
 
-<section class="section">
+<section class="contact section">
     <h1 id="name" class="title is-1" style="font-size: 0;">
-        <span class="letter">c</span>
+        <span class="letter">C</span>
         <span class="letter">o</span>
         <span class="letter">n</span>
         <span class="letter">t</span>
