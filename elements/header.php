@@ -15,4 +15,4 @@
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 	<script src="/packages/alexbracken/plangent/js/plangent.js"></script>
 </head>
-<body>
+<body class=@{ :template }>

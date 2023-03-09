@@ -13,21 +13,22 @@ window.addEventListener('load', function(){
 
 // Initialize scripts on DOM load
 document.addEventListener('DOMContentLoaded', function(){
+    if (document.querySelector('body').hasClass('.front')){
+        var grid = document.querySelector('.grid');
+        
+        // Masonry options
+        var msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
 
-    var grid = document.querySelector('.grid');
+        imagesLoaded( grid ).on( 'progress', function() {
+            // layout Masonry after each image loads
+            msnry.layout();
+        });
+    };
     
-    // Masonry options
-    var msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    });
-
-    imagesLoaded( grid ).on( 'progress', function() {
-        // layout Masonry after each image loads
-        msnry.layout();
-    });
-
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   
