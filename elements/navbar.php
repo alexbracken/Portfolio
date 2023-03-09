@@ -1,4 +1,4 @@
-<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+<nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
 		<div class="navbar-item">
 			<a href="/">
@@ -19,7 +19,7 @@
 			match: '{":level": "/1/"}'
 		} @>
 		<@ foreach in Pagelist @>
-			<a href="@{ url }" class="navbar-item">@{ title }</a>
+			<a href="@{ url }" class="navbar-item link">@{ title }</a>
 		<@ end @>
 		</div>
 </nav>

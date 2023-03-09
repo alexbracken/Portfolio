@@ -31,7 +31,7 @@ flex: 1 0 auto;
 }
 
 .grid-item:hover .project-image{
-    transform: scale(1.02);
+    transform: scale(1.015);
 }
 
 #blank .div{
