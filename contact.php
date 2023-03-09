@@ -11,19 +11,20 @@
     }
 }
 </script>
+<div class="container">
+    <section class="contact section">
+        <h1 id="name" class="title is-1" style="font-size: 0;">
+            <span class="letter">C</span>
+            <span class="letter">o</span>
+            <span class="letter">n</span>
+            <span class="letter">t</span>
+            <span class="letter">a</span>
+            <span class="letter">c</span>
+            <span class="letter">t</span>
+        </h1>
+    </section>
 
-<section class="contact section">
-    <h1 id="name" class="title is-1" style="font-size: 0;">
-        <span class="letter">C</span>
-        <span class="letter">o</span>
-        <span class="letter">n</span>
-        <span class="letter">t</span>
-        <span class="letter">a</span>
-        <span class="letter">c</span>
-        <span class="letter">t</span>
-    </h1>
-</section>
-
-<@ elements/form.php @>
+    <@ elements/form.php @>
+    </div>
 </div>
-<@ elements/footer.php @>
+    <@ elements/footer.php @>
