@@ -241,7 +241,7 @@ p{
 }
 
 .grid-sizer, .grid-item{
-    width: 33.333%;
+    width: 50%;
 }
 
 .navbar-brand a{
