@@ -11,9 +11,12 @@ window.addEventListener('load', function(){
     }
 });
 
+
+
 // Initialize scripts on DOM load
 document.addEventListener('DOMContentLoaded', function(){
-    if (document.getElementsByTagName('body').hasClass('.front')){
+    const body = document.getElementsByTagName('body');
+    if (body.hasClass('.front')){
         var grid = document.querySelector('.grid');
         
         // Masonry options
