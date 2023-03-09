@@ -1,4 +1,4 @@
-// Loading animation
+// Play header animation on page load
 window.addEventListener('load', function(){
 
     // If animation has played during session, don't play again
@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
     }
 });
 
-// Initialize masonry grid
+// Initialize scripts on DOM load
 document.addEventListener('DOMContentLoaded', function(){
 
     var grid = document.querySelector('.grid');
@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function(){
             percentPosition: true
         });
     });
-
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
