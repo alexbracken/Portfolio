@@ -11,7 +11,7 @@
     }
     </script>
     <div class="container">
-        <section class="contact section">
+        <section class="about section">
             <h1 id="name" class="title is-1" style="font-size: 0;">
                 <span class="letter">A</span>
                 <span class="letter">b</span>
@@ -21,6 +21,9 @@
             </h1>
         </section>
         <section>
+            <img class="headshot">
+                @{imageHeadshot | width: 800}
+            </img>
         </section>
 
     </div>

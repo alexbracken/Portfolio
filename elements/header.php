@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>@{ sitename } | @{ title }</title>
+	<meta name="description">@{ textProjectDescription }</meta>
 	<!-- CSS -->
 	<link rel="stylesheet" href="/packages/alexbracken/plangent/css/bulma.min.css">
 	<link rel="stylesheet" href="/packages/alexbracken/plangent/css/styles.css">
@@ -15,4 +16,4 @@
 	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 	<script src="/packages/alexbracken/plangent/js/plangent.js"></script>
 </head>
-<body class=@{ :template }>
+<body class="@{ :template }">
