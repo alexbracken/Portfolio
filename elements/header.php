@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>@{ sitename } | @{ title }</title>
-	<meta name="description">@{ textProjectDescription }</meta>
+	<meta name="description" content="@{ description }"></meta>
 	<!-- CSS -->
 	<link rel="stylesheet" href="/packages/alexbracken/plangent/css/bulma.min.css">
 	<link rel="stylesheet" href="/packages/alexbracken/plangent/css/styles.css">
