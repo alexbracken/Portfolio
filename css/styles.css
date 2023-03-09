@@ -440,8 +440,11 @@ figcaption{
     .navbar-burger{
         height: 4.5rem;
     }
-    .navbar-item a{
+    a.navbar-item{
         font-weight: unset;
+    }
+    .navbar-menu{
+        color: #efefef;
     }
 }
 
