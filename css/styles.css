@@ -5,13 +5,11 @@ body{
 }
 
 .wrapper{
-    min-height: 100vh;
     padding-bottom: 4rem;
 }
 
 .footer{
     padding-bottom: 3rem;
-
 }
 
 body {
@@ -23,6 +21,7 @@ body {
   }
   .footer {
     flex-shrink: 0;
+    height: 100px;
   }
 
 
