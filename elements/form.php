@@ -20,7 +20,7 @@
         <div class="field">
             <label class="label">Message</label>
             <div class="control">
-                <textarea class="textarea" placeholder="Type your message here" name="message">
+                <textarea class="textarea" placeholder="Type your message here" name="message"></textarea>
             </div>
         </div>
         <div class="field is-grouped">
