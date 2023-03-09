@@ -22,7 +22,7 @@
             <span class="letter">c</span>
             <span class="letter">t</span>
         </h1>
-        <p>Want to get in touch regarding a project or position? Hit me up using the form below, or just email me at <a class="link" href="mailto:>hello@alexbracken.me">hello@alexbracken.me</a></p>
+        <p>Want to get in touch regarding a project or position? Hit me up using the form below, or just email me at <a class="link" href="mailto:hello@alexbracken.me">hello@alexbracken.me</a></p>
     </section>
 
     <@ elements/form.php @>
