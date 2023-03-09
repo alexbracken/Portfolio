@@ -37,6 +37,11 @@ a.navbar-item{
     transition: all 0.2s ease-in-out;
 }
 
+.credits span{
+    display: inline;
+}
+
+
 .grid-item:hover .project-image{
     transform: scale(1.015);
 }
