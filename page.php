@@ -13,7 +13,7 @@ such as the header, navbar and footer markup.
 			<div class="am-block">
 				<h1 class="title">@{ title }</h1>
 				<div class="content">
-					@{ description | markdown }
+					@{ textDescription | markdown }
 				</div>
 			</div>
 		</section>
