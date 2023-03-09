@@ -3,7 +3,7 @@
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 
-<div class="form wrapper">
+<div class="form">
     <form action="https://send.pageclip.co/4xBIPqBkPp4zF07FmfDOQZNTBX1aaFDb" method="post">
         <div class="field">
             <label class="label">Name</label>
