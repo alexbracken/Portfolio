@@ -5,7 +5,7 @@
 				<span>Alex Bracken</span>
 			</a>
 		</div>
-		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
 		<span aria-hidden="true"></span>
 		<span aria-hidden="true"></span>
 		<span aria-hidden="true"></span>
