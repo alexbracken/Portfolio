@@ -49,12 +49,12 @@ a.navbar-item:hover{
     margin-right: 10px;
 }
 
-.credits span{
-    display: inline;
-}
-
 .credit.text{
     margin-top: 2px;
+}
+
+.credit.text p{
+    margin-top: 10px
 }
 
 .grid-item:hover{
