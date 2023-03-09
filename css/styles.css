@@ -157,6 +157,37 @@ a.tag:hover{
 	--am-gallery-controls-background: rgba(0,0,0,0.1);
 }
 
+
+.am-block p a {
+    color: #000;
+    position: relative;
+    text-decoration: none;
+    }
+    
+    .am-block p a:hover{
+color: #000;
+}
+.am-block p a::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 3px;
+border-radius: 5px;
+background-color: #000;
+bottom: 0;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out;
+}
+
+.am-block p a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+    
+
+
 .am-gallery-masonry{
  grid-auto-rows: unset;
 }
