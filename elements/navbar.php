@@ -19,7 +19,7 @@
 			match: '{":level": "/1/"}'
 		} @>
 		<@ foreach in Pagelist @>
-			<a href="@{ url }" class="navbar-item link">@{ title }</a>
+			<a href="@{ url }" class="navbar-item">@{ title }</a>
 		<@ end @>
 		</div>
 </nav>

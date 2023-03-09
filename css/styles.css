@@ -30,6 +30,14 @@ flex: 1 0 auto;
     transition: all 0.2s ease-in-out;
 }
 
+a.navbar-item{
+    transition: all 0.2s ease-in-out;
+}
+
+a.navbar-item:hover{
+    border-bottom: 1px black;
+}
+
 .grid-item:hover .project-image{
     transform: scale(1.015);
 }
