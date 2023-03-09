@@ -26,6 +26,13 @@ flex: 1 0 auto;
     margin-top: 20px;
 }
 
+.project-image{
+    transition: all 1s ease-in-out;
+}
+
+.grid-item:hover .project-image{
+    transform: scale(1.02);
+}
 
 #blank .div{
     height: 4000px;
