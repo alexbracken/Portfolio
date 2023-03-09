@@ -37,6 +37,14 @@ a.navbar-item{
     transition: all 0.2s ease-in-out;
 }
 
+.credits{
+    display: inline-flex
+}
+
+.credits .icon{
+    margin-right: 10px;
+}
+
 .credits span{
     display: inline;
 }
