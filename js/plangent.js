@@ -15,8 +15,7 @@ window.addEventListener('load', function(){
 
 // Initialize scripts on DOM load
 document.addEventListener('DOMContentLoaded', function(){
-    const body = document.getElementsByTagName('body');
-    if (body.hasClass('.front')){
+    if (document.body.classList.contains('front')){
         var grid = document.querySelector('.grid');
         
         // Masonry options
