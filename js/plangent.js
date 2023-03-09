@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded', function(){
         var grid = document.querySelector('.grid');
         
         // Masonry options
-        var msnry = new Masonry(grid, {
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+        var msnry;
 
-        imagesLoaded( grid ).on( 'progress', function() {
+        imagesLoaded( grid, function() {
+            msnry= new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
             // layout Masonry after each image loads
             msnry.layout();
         });
