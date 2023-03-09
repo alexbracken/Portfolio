@@ -1,38 +1,31 @@
-var loadAnimation = gsap.fromTo(".letter", {
-    y: 30,
-    opacity: 0
-}, {
-    y: 0,
-    opacity: 1,
-    stagger: 0.05,
-    ease: "elastic",
-    duration: 2,
-    delay: 0.5
-});
+// Loading animation
+window.addEventListener('load', function(){
 
-window.onload = function() {
-    if (sessionStorage.getItem("hasPlayed") === null) {
-        loadAnimation.play()
-        sessionStorage.setItem("hasPlayed", true);
+    // If animation has played during session, don't play again
+    if (sessionStorage.getItem("nameAnimationHasPlayed") === null) {
+        // define animation timeline
+        var loadAnimation = gsap.fromTo(".letter", {y: 30, opacity: 0}, {y: 0, opacity: 1, stagger: 0.05, ease: "elastic", duration: 2, delay: 0.5});
+        
+        loadAnimation.play() // play animation
+        sessionStorage.setItem("nameAnimationHasPlayed", true); // store value
     }
-};
-
-
-var grid = document.querySelector('.grid');
-var msnry;
-
-imagesLoaded(grid, function() {
-    // init Isotope after all images have loaded
-    msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    });
 });
 
+// Initialize masonry grid
+document.addEventListener('DOMContentLoaded', function(){
 
+    var grid = document.querySelector('.grid');
+    var msnry;
 
-document.addEventListener('DOMContentLoaded', () => {
+    imagesLoaded(grid, function() {
+        // init Isotope after all images have loaded
+        msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+    });
+
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -51,5 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
   
       });
     });
-  
-  });
+
+}, false)
