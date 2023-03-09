@@ -35,7 +35,7 @@ a.navbar-item{
 }
 
 a.navbar-item:hover{
-    border-bottom: 1px black;
+    color: #000;
 }
 
 .grid-item:hover .project-image{
@@ -263,6 +263,12 @@ font-size: 20px;
 font-weight: 600;
 }
 
+.navbar-item a{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .link {
 color: #000;
 position: relative;
@@ -316,7 +322,6 @@ font-size: 1.5rem;
 .page-header {
     text-align: center;
     padding: 2rem 0;
-    width: 100%;
 }
 
 .page-header am-block{
