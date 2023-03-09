@@ -1,6 +1,6 @@
 // Play header animation on page load
 window.addEventListener('load', function(){
-    TweenLite.to(".letter", {autoAlpha:0});
+    TweenLite.to(".letter", {visibility: "visible"});
     // If animation has played during session, don't play again
     if (sessionStorage.getItem("nameAnimationHasPlayed") === null) {
         // define animation timeline
