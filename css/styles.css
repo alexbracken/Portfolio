@@ -442,10 +442,15 @@ figcaption{
     }
     a.navbar-item{
         font-weight: unset;
+        padding-right: 1rem;
     }
     .navbar-menu{
-        color: #efefef;
+        background-color: rgb(250,250,250)
     }
+    .navbar-end{
+        text-align: right;
+    }
+
 }
 
 
