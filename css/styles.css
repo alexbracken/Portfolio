@@ -200,7 +200,7 @@ am-img img{
 
 .letter{
     display: inline-block;
-    opacity: 0;
+    visibility: hidden;
 }
 
 
