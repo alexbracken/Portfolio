@@ -42,5 +42,4 @@
     <@ elements/post-grid.php @>
 </div>
 </div>
-<@ elements/logo-animation.php @>
 <@ elements/footer.php @>

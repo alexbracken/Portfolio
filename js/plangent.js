@@ -15,15 +15,17 @@ window.addEventListener('load', function(){
 document.addEventListener('DOMContentLoaded', function(){
 
     var grid = document.querySelector('.grid');
-    var msnry;
+    
+    // Masonry options
+    var msnry = new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    });
 
-    imagesLoaded(grid, function() {
-        // init Isotope after all images have loaded
-        msnry = new Masonry(grid, {
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+    imagesLoaded( grid ).on( 'progress', function() {
+        // layout Masonry after each image loads
+        msnry.layout();
     });
 
     // Get all "navbar-burger" elements
