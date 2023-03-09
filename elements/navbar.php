@@ -1,4 +1,4 @@
-<nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+<nav class="navbar is-spaced" role="navigation" data-target="navMenu" aria-label="main navigation">
 	<div class="navbar-brand">
 		<div class="navbar-item">
 			<a href="/">
