@@ -41,7 +41,7 @@ a.navbar-item{
     display: inline-flex
 }
 
-.credits .icon{
+.credit.icon{
     margin-right: 10px;
 }
 
@@ -49,6 +49,9 @@ a.navbar-item{
     display: inline;
 }
 
+.credit.text{
+    margin-top: 2px;
+}
 
 .grid-item:hover .project-image{
     transform: scale(1.015);
