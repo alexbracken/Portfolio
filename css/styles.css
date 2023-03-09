@@ -57,6 +57,10 @@ a.navbar-item:hover{
     margin-top: 10px
 }
 
+.navbar-menu{
+    box-shadow: none!important;
+}
+
 .grid-item:hover{
     transform: scale(1.015);
 }
@@ -429,6 +433,12 @@ figcaption{
     }
     .grid-sizer, .grid-item{
         width: 50%;
+    }
+    .navbar{
+        min-height: 4.5rem;
+    }
+    .navbar-burger{
+        height: 4.5rem;
     }
 }
 
