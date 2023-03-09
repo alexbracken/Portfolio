@@ -1,5 +1,5 @@
 <@ elements/header.php @>
-
+<div class="wrapper">
 <@ elements/navbar.php @>
 
 <script>
@@ -25,5 +25,5 @@
 </section>
 
 <@ elements/form.php @>
-
+</div>
 <@ elements/footer.php @>
