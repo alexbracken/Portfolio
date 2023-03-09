@@ -11,7 +11,20 @@ body{
 
 .footer{
     padding-bottom: 3rem;
+
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+
 
 #blank .div{
     height: 4000px;
