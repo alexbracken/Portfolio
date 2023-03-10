@@ -76,9 +76,7 @@
                             <div class="tags">
                                 <@ foreach in tags @>
                                 <span class="tag">
-                                    <a href="@{ :url }?<@ queryStringMerge { filter: @{ :tag } } @>">
                                     @{ :tag }
-                                    </a>
                                 </span>
                                 <@ end @>
                             </div>
