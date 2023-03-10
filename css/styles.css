@@ -279,11 +279,11 @@ am-img img{
     transform: scale(105%);
 }
 
-.project-info .tag, .project-info .tag{
-    cursor: pointer;
+.project-info .tag, .project-info .tags{
+    cursor: default;
 }
 
-.project-info .title{
+.project-info .title *{
     cursor: pointer;
 }
 .navbar-brand span{
