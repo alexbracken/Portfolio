@@ -18,7 +18,6 @@ such as the header, navbar and footer markup.
 					</div>
 				</section>
 			</div>
-			<div class="column is-1"></div>
 			<div class="column">
 				<section>
 					<div class="am-block content">
