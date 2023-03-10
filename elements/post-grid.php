@@ -31,31 +31,33 @@
                 <article class="project-container">
                     <div class="project-image">
                         <a href="@{url}">
-                            <@ with @{imageFeatured_01} {width: 300} @>
-                                <@ set { ":small": @{ :fileResized } } @>
-                            <@ end @>
-                            <@ with @{imageFeatured_01} {width: 600} @>
-                                <@ set { ":medium": @{ :fileResized } } @>
-                            <@ end @>
-                            <@ with @{imageFeatured_01} {width: 900} @>
-                                <@ set { ":large": @{ :fileResized } } @>
-                            <@ end @>
-                            <@ with @{imageFeatured_01} {width: 1200}} @>
-                                <@ set { "xlarge": @{ :fileResized } } @>
-                            <@ end @>
-                            
+                            <@ if @{checkboxIsGif} = "false" @>
+                                <@ with @{imageFeatured_01} {width: 300} @>
+                                    <@ set { ":small": @{ :fileResized } } @>
+                                <@ end @>
+                                <@ with @{imageFeatured_01} {width: 600} @>
+                                    <@ set { ":medium": @{ :fileResized } } @>
+                                <@ end @>
+                                <@ with @{imageFeatured_01} {width: 900} @>
+                                    <@ set { ":large": @{ :fileResized } } @>
+                                <@ end @>
+                                <@ with @{imageFeatured_01} {width: 1200}} @>
+                                    <@ set { "xlarge": @{ :fileResized } } @>
+                                <@ end @>
+                                
 
-                            <@ with @{imageFeatured_01} {width: 300} @>
-                                <img 
-                                    class="project-thumbnail"
-                                    srcset=
-                                        "@{:small} 1x,
-                                        @{:medium} 2x,
-                                        @{:large} 3x,
-                                        @{:xlarge} 4x"
-                                    src="@{ :file }" 
-                                    alt="@{ :caption }">
-                                </img>
+                                <@ with @{imageFeatured_01} {width: 300} @>
+                                    <img 
+                                        class="project-thumbnail"
+                                        srcset=
+                                            "@{:small} 1x,
+                                            @{:medium} 2x,
+                                            @{:large} 3x,
+                                            @{:xlarge} 4x"
+                                        src="@{ :file }" 
+                                        alt="@{ :caption }">
+                                    </img>
+                                <@ end @>
                             <@ end @>
                             <@ if @{checkboxIsGif} @>
                                 <@ foreach in filelist @>
