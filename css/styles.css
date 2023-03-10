@@ -509,7 +509,7 @@ figcaption{
         margin-bottom: 0;
     }
     #name span{
-        font-size: 10vw;
+        font-size: 11vw;
     }
     #introduction{
         font-size: 18px;
@@ -519,6 +519,11 @@ figcaption{
     }
     #subhead{
         font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    #intro .hero-body{
+        padding: 2rem 1.5rem
     }
     .navigation a{
         font-size: 16px;
@@ -526,6 +531,9 @@ figcaption{
     .navigation ul li a::before{
         height: 2px;
         border-radius: 2px;
+    }
+    .navigation ul li{
+        padding: 0 0.5rem;
     }
     .gallery figure:not(:first-child){
         display: none;
@@ -551,7 +559,7 @@ figcaption{
         display: none;
     }
     .post-grid-container.section{
-        padding: 2rem 0.5rem;
+        padding: 1.5rem 0.5rem 0rem 0.5rem;
     }
     .project-page.container{
         padding: 2rem 1rem 0;
