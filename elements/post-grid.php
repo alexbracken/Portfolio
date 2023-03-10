@@ -31,7 +31,7 @@
                 <article class="project-container">
                     <div class="project-image">
                         <a href="@{url}">
-                            <@ if @{:gif} != true @>
+                            <@ if @{checkboxIsGif} = false @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <@ set { ":small": @{ :fileResized } } @>
                                 <@ end @>
