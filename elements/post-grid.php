@@ -78,10 +78,6 @@
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
-                                            src="@{:small}"
-                                            <@ if @{ :position } <= 5 @>
-                                                loading="lazy"
-                                            <@ end @>
                                             ></img>
                                         </div>
                                 <@ end @>
