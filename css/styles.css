@@ -377,8 +377,8 @@ background-position-x: left;
 }
 
 .project-page .content a {
-padding-bottom: 1px;
---bg-h: 2px;
+padding-bottom: 0px;
+--bg-h: 3px;
 }
 
 
