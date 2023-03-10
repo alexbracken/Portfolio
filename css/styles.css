@@ -473,10 +473,6 @@ figcaption{
     .navbar-end{
         text-align: right;
     }
-    .project-page .section{
-        padding: 0;
-    }
-
 }
 
 
@@ -559,5 +555,8 @@ figcaption{
     }
     .project-page.container{
         padding: 2rem 1rem 0;
+    }
+    .project-page .section{
+        padding: 0;
     }
 }
