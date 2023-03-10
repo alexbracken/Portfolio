@@ -21,7 +21,7 @@
                 <p id="subhead" class="subtitle is-5">I'm a graphic designer, journalist, and web developer based in Indiana.</p>
                 <div class="navigation">
                     <ul>
-                        <@ newPagelist { type: 'children'} @>
+                        <@ newPagelist { type: 'children' sort: 'date desc'} @>
                         <@ foreach in pagelist @>
                             <li><a href="@{ url }" class="link">@{ title }</a></li>
                         <@ end @>
