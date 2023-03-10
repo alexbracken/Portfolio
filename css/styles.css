@@ -386,6 +386,7 @@ div.project-info .title{
     width: 100%;
     transition: all 0.2s ease-in-out;
     padding-top: 1rem;
+    padding-left: 0.25rem;
 }
 
 .project-container{
