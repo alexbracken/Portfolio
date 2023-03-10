@@ -69,6 +69,9 @@
                                 <@ end @>
                             <@ end @>
                             <@ if @{checkboxIsGif} = 1 @>
+                                <@ filelist {
+                                    glob: "*.gif, *.webp"
+                                } @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} = 1 @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
