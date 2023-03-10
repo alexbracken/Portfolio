@@ -21,8 +21,7 @@
             </h1>
         </section>
         <section>
-            <img class="headshot" src="@{imageHeadshot | width: 800}"> 
-            </img>
+            @{ textAbout }
         </section>
 
     </div>
