@@ -438,7 +438,7 @@ figcaption{
     line-height: 1.1;
 }
 
-.contact.section{
+.contact.section, .about.section{
     text-align: center;
 }
 
