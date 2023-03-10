@@ -275,13 +275,6 @@ am-img img{
     width: 20%
 }
 
-
-.tag:hover{
-transition: 100ms;
-transition-timing-function: ease-in-out;
-transform: scale(105%);
-}
-
 .project-info .tag a{
     transition: 100ms;
     transition-timing-function: ease-in-out;
