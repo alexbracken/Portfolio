@@ -55,7 +55,8 @@
                                                 @{:large} 3x,
                                                 @{:xlarge} 4x"
                                             src="@{ :file }" 
-                                            alt="@{ :caption }">
+                                            alt="@{ :caption }"
+                                            loading="lazy">
                                         </img>
                                     <@ end @>
                                 <@ end @>
