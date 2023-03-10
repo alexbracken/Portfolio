@@ -6,8 +6,8 @@ such as the header, navbar and footer markup.
 <@ elements/header.php @>
 <@ elements/navbar.php @>
 
-		<@ set { "featured": @{ imageFeatured_01}} @>
-		<@ set { "gif": @{checkboxIsGif} @>
+		<@ set { "featured": @{ imageFeatured_01 }} @>
+		<@ set { "gif": @{checkboxIsGif | def('false')} } @>
 		<@ set { "isFeatured": @{ checkboxIsFeatured | def("false")} } @>
 	<div class="project-page container is-widescreen">
 		<div class="columns section is-desktop">
