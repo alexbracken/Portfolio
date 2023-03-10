@@ -26,7 +26,7 @@ flex: 1 0 auto;
     margin-top: 20px;
 }
 
-.grid-item{
+.project-image{
     transition: all 0.2s ease-in-out;
 }
 
@@ -61,7 +61,7 @@ a.navbar-item:hover{
     box-shadow: none!important;
 }
 
-.grid-item:hover{
+.project-image:hover{
     transform: scale(1.015);
 }
 
