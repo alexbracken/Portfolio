@@ -240,6 +240,11 @@ p{
     cursor:default;
 }
 
+.page-header{
+    position: sticky;
+    top: 150;
+}
+
 .project-page.container{
     padding-top: 3rem;
 }
@@ -446,8 +451,6 @@ figcaption{
     font-size: 12px;
     line-height: 1.1;
 }
-
-
 
 .contact.section{
     text-align: center;
