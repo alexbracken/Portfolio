@@ -44,9 +44,9 @@
                                 <@ with @{imageFeatured_01} {width: 1200}} @>
                                     <@ set { "xlarge": @{ :fileResized } } @>
                                 <@ end @>
-                                
-                                <@ if @{:i} >= 1 @>
-                                    <@ with @{imageFeatured_01} {width: 300} @>
+
+                                <@ with @{imageFeatured_01} {width: 300} @>
+                                    <noscript class="loading-lazy">
                                         <img 
                                             class="project-thumbnail"
                                             srcset=
@@ -56,10 +56,14 @@
                                                 @{:xlarge} 4x"
                                             src="@{ :file }" 
                                             alt="@{ :caption }"
-                                            loading="lazy">
+                                            <@ if @{ :i } <= 5 @>
+                                                loading="lazy"
+                                            <@end@>
+                                            >
                                         </img>
-                                    <@ end @>
+                                    </noscript>
                                 <@ end @>
+
                             <@ else @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
