@@ -17,6 +17,11 @@ such as the header, navbar and footer markup.
 					<div class="content">
 						@{ textDescription | markdown }
 					</div>
+					<@ if @{checkboxCallToAction} @>
+						<div class="cta">
+							<a class="button" href="@{ urlCallToActionLink }" target="_blank">@{ CallToActionText }</a>
+						</div>
+					<@ end @>
 				</section>
 			</div>
 			<div class="column">
