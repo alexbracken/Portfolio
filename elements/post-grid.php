@@ -84,7 +84,6 @@
                                             <@ end @>
                                             ></img>
                                         </div>
-                                    <@ end @>
                                 <@ end @>
                             <@ end @>
                         </a>
