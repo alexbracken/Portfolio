@@ -64,15 +64,25 @@
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
                                             <@end@>
-                                            >
-                                        </img>
+                                            ></img>
                                     </div>
                                 <@ end @>
 
                             <@ else @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
-                                        <img class="project-thumbnail" src="@{:file}"><img>
+                                        <@ with @{imageFeatured_01} {width: 300} @>
+                                            <@ set { ":small": @{ :fileResized } } @>
+                                            <div class="ratio-box" style="padding-bottom: calc(@{:heightResized} / @{:widthResized} * 100%)">
+                                        <@ end @>
+                                            <img class="project-thumbnail lazyload"
+                                            data-src="@{:file}"
+                                            src="@{:small}"
+                                            <@ if @{ :position } <= 5 @>
+                                                loading="lazy"
+                                            <@ end @>
+                                            ><img>
+                                        </div>
                                     <@ end @>
                                 <@ end @>
                             <@ end @>
