@@ -59,11 +59,11 @@
                                     </img>
                                 <@ end @>
                                 <@ else @>
-                                    <@ if @{:i} <= 1 @>
                                         <@ foreach in filelist @>
-                                            <img class="project-thumbnail" src="@{:file}"><img>
+                                            <@ if @{:i} >= 1 @>
+                                                <img class="project-thumbnail" src="@{:file}"><img>
+                                            <@ end @>
                                         <@ end @>
-                                    <@ end @>
                                 <@ end @>
                         </a>
                     </div>
