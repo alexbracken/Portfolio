@@ -50,7 +50,7 @@
                                 <@ end @>
 
                                 <@ with @{imageFeatured_01} {width: 300} @>
-                                    <div class="ratio-box" style="padding-bottom: calc(@{:width} / @{:height} * 100%)>
+                                    <div class="ratio-box" style="padding-bottom: calc(@{:width} / @{:height} * 100%)">
                                         <img 
                                             class="project-thumbnail lazyload"
                                             data-srcset=
