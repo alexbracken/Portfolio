@@ -33,7 +33,7 @@
                     <div class="project-image">
                         <a href="@{url}">
                             <@ if @{checkboxIsGif} != 1 @>
-                                <@ with @{imageFeatured_01} {width: 100} @>
+                                <@ with @{imageFeatured_01} {width: 10} @>
                                     <@ set { ":xsmall": @{ :fileResized } } @>
                                 <@ end @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
