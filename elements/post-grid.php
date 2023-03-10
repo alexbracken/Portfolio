@@ -58,8 +58,7 @@
                                         alt="@{ :caption }">
                                     </img>
                                 <@ end @>
-                            <@ end @>
-                            <@ if @{:gif} = true @>
+                            <@ else@>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
                                         <img class="project-thumbnail" src="@{:file}"><img>
