@@ -31,7 +31,7 @@
                 <article class="project-container">
                     <div class="project-image">
                         <a href="@{url}">
-                            <@ if @{:gif} != 1 @>
+                            <@ if @{:gif} = 0 @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <@ set { ":small": @{ :fileResized } } @>
                                 <@ end @>
@@ -58,7 +58,7 @@
                                         alt="@{ :caption }">
                                     </img>
                                 <@ end @>
-                            <@ else@>
+                            <@ else @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
                                         <img class="project-thumbnail" src="@{:file}"><img>
