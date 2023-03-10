@@ -27,6 +27,7 @@
     <div class="grid">
         <div class="grid-sizer"></div>
         <@ foreach in pagelist @>
+            <@ set {"position": @{:i}} @>
             <div class="grid-item">
                 <article class="project-container">
                     <div class="project-image">
@@ -56,7 +57,7 @@
                                                 @{:xlarge} 4x"
                                             src="@{ :file }" 
                                             alt="@{ :caption }"
-                                            <@ if @{ :i } <= 5 @>
+                                            <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
                                             <@end@>
                                             >
