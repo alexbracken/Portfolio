@@ -74,7 +74,7 @@
                                     <@ set {":thumbWidth": @{:width}} @>
                                 <@ end @>
                                 <@ foreach in '*.gif, *.webp' @>
-                                        <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
+                                        <div class="ratio-box" style="padding-bottom: calc(@{:thumbHeight} / @{:thumbWidth} * 100%)">
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
                                             ></img>
