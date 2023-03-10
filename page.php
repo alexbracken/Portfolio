@@ -9,17 +9,21 @@ such as the header, navbar and footer markup.
 	<@ set { "featured": @{ imageFeatured_01 }, @{ imageFeatured_02 }, @{ imageFeatured_03 }}
 		{ "isFeatured": @{ checkboxIsFeatured | def("false")} } @>
 	<div class="project-page container">
-		<section class="page-header">
-			<div class="am-block">
-				<h1 class="title">@{ title }</h1>
-				<div class="content">
-					@{ textDescription | markdown }
-				</div>
+		<div class="columns">
+			<div class="column is-3">
+				<section class="page-header">
+					<div class="am-block">
+						<h1 class="title">@{ title }</h1>
+						<div class="content">
+							@{ textDescription | markdown }
+						</div>
+					</div>
+				</section>
+			<div class="column">
+				<section>
+					<div class="am-block content">
+						@{ +main }
+					</div>
+				</section>
 			</div>
-		</section>
-		<section>
-			<div class="am-block content">
-				@{ +main }
-			</div>
-		</section>
 <@ elements/footer.php @>
