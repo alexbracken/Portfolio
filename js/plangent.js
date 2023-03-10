@@ -8,11 +8,8 @@ if (document.body.classList.contains('front')){
         columnWidth: '.grid-sizer',
         percentPosition: true
     });
-
-    imagesLoaded( grid ).on( 'progress', function() {
-        // layout Masonry after each image loads
-        msnry.layout();
-      });
+    // layout Masonry after each image loads
+    msnry.layout();
 
 };
 
