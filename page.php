@@ -7,7 +7,7 @@ such as the header, navbar and footer markup.
 <@ elements/navbar.php @>
 
 		<@ set { "featured": @{ imageFeatured_01 }, @{ imageFeatured_02 }, @{ imageFeatured_03 }} @>
-		<@ set @{checkboxIsGif} @>
+		<@ set { "gif": @{checkboxIsGif} @>
 		<@ set { "isFeatured": @{ checkboxIsFeatured | def("false")} } @>
 	<div class="project-page container is-widescreen">
 		<div class="columns section is-desktop">

@@ -31,7 +31,7 @@
                 <article class="project-container">
                     <div class="project-image">
                         <a href="@{url}">
-                            <@ if @{checkboxIsGif} != "true" @>
+                            <@ if @{:gif} != "true" @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <@ set { ":small": @{ :fileResized } } @>
                                 <@ end @>
@@ -59,7 +59,7 @@
                                     </img>
                                 <@ end @>
                             <@ end @>
-                            <@ if @{checkboxIsGif} @>
+                            <@ if @{:gif} = true @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
                                         <img class="project-thumbnail" src="@{:file}"><img>
