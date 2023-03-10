@@ -10,7 +10,7 @@ such as the header, navbar and footer markup.
 		{ "isFeatured": @{ checkboxIsFeatured | def("false")} } @>
 	<div class="project-page container is-fluid">
 		<div class="columns">
-			<div class="column is-3">
+			<div class="column is-offset-1 is-3">
 				<section class="page-header">
 					<h1 class="title">@{ title }</h1>
 					<div class="content">
