@@ -69,17 +69,19 @@
                                 <@ end @>
                             <@ end @>
                             <@ if @{checkboxIsGif} = 1 @>
+                                <@ with @{imageFeatured_01} {width: 300} @>
+                                    <@ set { ":small": @{ :fileResized } } @>
+                                    <@ set {":thumbHeight": @{:height}} @>
+                                    <@ set {":thumbWidth": @{:width}} @>
+                                <@ end @>
                                 <@ filelist {
                                     glob: "*.gif, *.webp"
                                 } @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} = 1 @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
-                                            <@ with @{imageFeatured_01} {width: 300} @>
-                                                <@ set { ":small": @{ :fileResized } } @>
-                                            <@ end @>
                                             <img class="project-thumbnail lazyload"
-                                            data-src="@{:url}"
+                                            data-src="@{:file}"
                                             src="@{:small}"
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
