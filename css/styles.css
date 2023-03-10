@@ -364,13 +364,13 @@ font-size: 1.5rem;
 
 
 .project-page .content a{
-color: #000;
+color: #ff720e;
 position: relative;
 text-decoration: none;
 }
 
 .project-page .content a:hover{
-color: #000;
+color: #f56600;
 }
 .project-page .content a::before {
 content: '';
@@ -378,7 +378,7 @@ position: absolute;
 width: 100%;
 height: 3px;
 border-radius: 5px;
-background-color: #000;
+background-color: #f56600;
 bottom: -4;
 left: 0;
 transform-origin: right;
