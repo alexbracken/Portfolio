@@ -23,7 +23,10 @@
         <section class="section content">
             @{ textAbout }
         </section>
-        <@ elements/form.php @>
+        <section>
+            <p>Want to talk about a project or opportunity? Hit me up!</p>
+            <@ elements/form.php @>
+        </section>
     </div>
 </div>
     <@ elements/footer.php @>
