@@ -266,6 +266,12 @@ am-img img{
     visibility: hidden;
 }
 
+.ratio-box {
+	position: relative;
+	height: 0;
+	display: block;
+	width: 100%;
+}
 
 .arrow{
     float: right;
