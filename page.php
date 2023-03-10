@@ -19,6 +19,7 @@ such as the header, navbar and footer markup.
 						</div>
 					</div>
 				</section>
+			</div>
 			<div class="column">
 				<section>
 					<div class="am-block content">
@@ -26,4 +27,5 @@ such as the header, navbar and footer markup.
 					</div>
 				</section>
 			</div>
+		</div>
 <@ elements/footer.php @>
