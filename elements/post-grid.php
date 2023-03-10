@@ -1,3 +1,4 @@
+<@ set @{checkboxIsGif} @>
 <div class="post-grid">
     <@ if @{checkboxFilterByTags} @>
         <div class="filters">
