@@ -74,11 +74,8 @@
                                     <@ set {":thumbHeight": @{:height}} @>
                                     <@ set {":thumbWidth": @{:width}} @>
                                 <@ end @>
-                                <@ filelist {
-                                    glob: "*.gif, *.webp"
-                                } @>
                                 <@ foreach in filelist @>
-                                    <@ if @{:i} = 1 @>
+                                    <@ if not @{imageFeatured_01} and @{:i} = 1 @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
