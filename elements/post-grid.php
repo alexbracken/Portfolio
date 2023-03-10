@@ -79,7 +79,7 @@
                                                 <@ set { ":small": @{ :fileResized } } @>
                                             <@ end @>
                                             <img class="project-thumbnail lazyload"
-                                            data-src="@{:file}"
+                                            data-src="@{:url}"
                                             src="@{:small}"
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
