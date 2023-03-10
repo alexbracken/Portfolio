@@ -50,7 +50,6 @@
                                 <@ end @>
 
                                 <@ with @{imageFeatured_01} {width: 300} @>
-                                    <noscript class="loading-lazy">
                                         <img 
                                             class="project-thumbnail lazyload"
                                             data-srcset=
@@ -66,7 +65,6 @@
                                             <@end@>
                                             >
                                         </img>
-                                    </noscript>
                                 <@ end @>
 
                             <@ else @>
