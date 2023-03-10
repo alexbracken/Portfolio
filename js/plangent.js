@@ -1,17 +1,5 @@
-// Initialize masonry and imagesLoaded
-if (document.body.classList.contains('front')){
-    var grid = document.querySelector('.grid');
-    
-    // Masonry options
-    var msnry= new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    });
-    // layout Masonry after each image loads
-    msnry.layout();
 
-};
+
 
 // Play header animation on page load
 window.addEventListener('load', function(){
@@ -24,6 +12,19 @@ window.addEventListener('load', function(){
         loadAnimation.play() // play animation
         sessionStorage.setItem("nameAnimationHasPlayed", true); // store value
     }
+
+    // Initialize masonry and imagesLoaded
+    if (document.body.classList.contains('front')){
+        var grid = document.querySelector('.grid');
+        
+        // Masonry options
+        var msnry= new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+    
+    };
 });
 
 
