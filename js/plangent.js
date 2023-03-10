@@ -1,18 +1,19 @@
+// Initialize masonry and imagesLoaded
 if (document.body.classList.contains('front')){
     var grid = document.querySelector('.grid');
     
     // Masonry options
-    var msnry;
+    var msnry= new Masonry(grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+    });
 
-    imagesLoaded( grid, function() {
-        msnry= new Masonry(grid, {
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+    imagesLoaded( grid ).on( 'progress', function() {
         // layout Masonry after each image loads
         msnry.layout();
-    });
+      });
+
 };
 
 // Play header animation on page load
