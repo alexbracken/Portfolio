@@ -58,7 +58,7 @@
                                                 @{:large} 3x,
                                                 @{:xlarge} 4x"
                                             data-src="@{ :file }" 
-                                            src="@{:xsmall}
+                                            src="@{:xsmall}"
                                             alt="@{ :caption }"
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
