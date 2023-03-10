@@ -45,18 +45,19 @@
                                     <@ set { "xlarge": @{ :fileResized } } @>
                                 <@ end @>
                                 
-
-                                <@ with @{imageFeatured_01} {width: 300} @>
-                                    <img 
-                                        class="project-thumbnail"
-                                        srcset=
-                                            "@{:small} 1x,
-                                            @{:medium} 2x,
-                                            @{:large} 3x,
-                                            @{:xlarge} 4x"
-                                        src="@{ :file }" 
-                                        alt="@{ :caption }">
-                                    </img>
+                                <@ if @{:i} >= 1 @>
+                                    <@ with @{imageFeatured_01} {width: 300} @>
+                                        <img 
+                                            class="project-thumbnail"
+                                            srcset=
+                                                "@{:small} 1x,
+                                                @{:medium} 2x,
+                                                @{:large} 3x,
+                                                @{:xlarge} 4x"
+                                            src="@{ :file }" 
+                                            alt="@{ :caption }">
+                                        </img>
+                                    <@ end @>
                                 <@ end @>
                             <@ else @>
                                 <@ foreach in filelist @>
