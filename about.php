@@ -22,6 +22,7 @@
         </section>
         <section class="section content">
             @{ textAbout }
+            <br></br>
             <p>Want to talk about a project or opportunity? Hit me up!</p>
         </section>
         <section>
