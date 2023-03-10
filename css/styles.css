@@ -473,6 +473,9 @@ figcaption{
     .navbar-end{
         text-align: right;
     }
+    .project-page .section{
+        padding: 0;
+    }
 
 }
 
