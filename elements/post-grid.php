@@ -67,14 +67,13 @@
                                             ></img>
                                     </div>
                                 <@ end @>
-                            <@ end @>
-                            <@ if @{checkboxIsGif} = 1 @>
+                            <@ else @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <@ set { ":small": @{ :fileResized } } @>
                                     <@ set {":thumbHeight": @{:height}} @>
                                     <@ set {":thumbWidth": @{:width}} @>
                                 <@ end @>
-                                <@ foreach in '*.gif', '*.webp' @>
+                                <@ foreach in '*.gif, *.webp' @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
