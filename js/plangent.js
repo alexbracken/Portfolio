@@ -1,3 +1,20 @@
+if (document.body.classList.contains('front')){
+    var grid = document.querySelector('.grid');
+    
+    // Masonry options
+    var msnry;
+
+    imagesLoaded( grid, function() {
+        msnry= new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        });
+        // layout Masonry after each image loads
+        msnry.layout();
+    });
+};
+
 // Play header animation on page load
 window.addEventListener('load', function(){
     TweenLite.to(".letter", {visibility: "visible"});
@@ -15,22 +32,6 @@ window.addEventListener('load', function(){
 
 // Initialize scripts on DOM load
 document.addEventListener('DOMContentLoaded', function(){
-    if (document.body.classList.contains('front')){
-        var grid = document.querySelector('.grid');
-        
-        // Masonry options
-        var msnry;
-
-        imagesLoaded( grid, function() {
-            msnry= new Masonry(grid, {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer',
-                percentPosition: true
-            });
-            // layout Masonry after each image loads
-            msnry.layout();
-        });
-    };
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
