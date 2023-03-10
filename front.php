@@ -36,7 +36,6 @@
     type: 'children',
     filter: '@{?filter}',
     context: '/work'
-    sort: 'date desc, :basename asc'
 } @>
 
 <div class="post-grid-container section">
