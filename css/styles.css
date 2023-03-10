@@ -141,20 +141,11 @@ a.tag:hover{
 
 
 :root {
-    --am-block-max-width: 800px;
+    --am-block-max-width: 900px;
     --am-block-margin-top: 2em;
     --am-container-padding: 32px;
     --am-flex-gap: 2rem;
     --am-flex-min-block-width: 0;
-
-    --am-gallery-gap: 10px;
-	--am-gallery-item-width: 1000px;
-	--am-gallery-z-index: 9999;
-	--am-gallery-max-height: 100%;
-	--am-gallery-max-width: 100%;
-	--am-gallery-background: rgba(0,0,0,0.2);
-	--am-gallery-controls-color: #FFFFFF;
-	--am-gallery-controls-background: rgba(0,0,0,0.1);
 }
 
 
@@ -242,7 +233,7 @@ p{
 
 .page-header{
     position: sticky;
-    top: 150;
+    top: 125;
 }
 
 .project-page.container{
