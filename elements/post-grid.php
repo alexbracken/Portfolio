@@ -91,9 +91,11 @@
                             </h2>
                             <div class="tags">
                                 <@ foreach in tags @>
-                                <span class="tag">
-                                    @{ :tag }
-                                </span>
+                                    <@ if @{:i} <4 @>
+                                        <span class="tag">
+                                            @{ :tag }
+                                        </span>
+                                    <@ end @>
                                 <@ end @>
                             </div>
                         </div>
