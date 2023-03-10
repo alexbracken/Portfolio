@@ -342,7 +342,6 @@ font-size: 1.5rem;
     background: linear-gradient(0deg, #1a79fe, #1a79fe) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 100%;
-    font-weight: 450;
     color: #000;
   }
 .project-page .content a:where(:hover, :focus-visible), .link:where(:hover, :focus-visible) {
@@ -355,7 +354,13 @@ padding-bottom: 4px;
 --bg-h: 3px;
 }
 
+.project-page .content a{
+    font-weight: 450;
+}
 
+.link{
+    padding-bottom: 3px;
+}
 
 
 
