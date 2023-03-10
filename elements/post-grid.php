@@ -67,8 +67,8 @@
                                             ></img>
                                     </div>
                                 <@ end @>
-
-                            <@ else @>
+                            <@ end @>
+                            <@ if @{checkboxIsGif} = 1 @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
