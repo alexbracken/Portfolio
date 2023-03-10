@@ -89,9 +89,6 @@ justify-content: center;
     color: #363636;
 }
 
-a.tag:hover{
-    text-decoration: none;
-}
 
 .tag.is-active.is-delete:hover{
     background-color: #000;
@@ -106,11 +103,7 @@ a.tag:hover{
     color: #fff;
 }
 
-.post-grid .tag:hover{
-    transform: none;
-    background-color: #222;
-    color: #fff;
-}
+
 
 .post-grid .tag{
     transition: all 0.3s ease-in-out;
@@ -287,7 +280,6 @@ am-img img{
 transition: 100ms;
 transition-timing-function: ease-in-out;
 transform: scale(105%);
-cursor: pointer;
 }
 
 .project-info .tag a{
@@ -296,9 +288,6 @@ cursor: pointer;
     transform: scale(105%);
 }
 
-.project-info .tag:hover a{
-    color: #fff!important;
-}
 
 .navbar-brand span{
     font-weight: 800;
