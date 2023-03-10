@@ -22,9 +22,9 @@
         </section>
         <section class="section content">
             @{ textAbout }
+            <p>Want to talk about a project or opportunity? Hit me up!</p>
         </section>
         <section>
-            <p>Want to talk about a project or opportunity? Hit me up!</p>
             <@ elements/form.php @>
         </section>
     </div>
