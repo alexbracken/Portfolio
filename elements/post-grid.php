@@ -71,17 +71,17 @@
                             <@ else @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
-                                        <@ with @{imageFeatured_01} {width: 300} @>
-                                            <@ set { ":small": @{ :fileResized } } @>
-                                            <div class="ratio-box" style="padding-bottom: calc(@{:heightResized} / @{:widthResized} * 100%)">
-                                        <@ end @>
+                                        <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
+                                            <@ with @{imageFeatured_01} {width: 300} @>
+                                                <@ set { ":small": @{ :fileResized } } @>
+                                            <@ end @>
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
                                             src="@{:small}"
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
                                             <@ end @>
-                                            ><img>
+                                            ></img>
                                         </div>
                                     <@ end @>
                                 <@ end @>
