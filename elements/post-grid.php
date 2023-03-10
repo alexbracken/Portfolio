@@ -57,6 +57,7 @@
                                         src="@{ :file }" 
                                         alt="@{ :caption }">
                                     </img>
+                                <@ end @>
                                 <@ else @>
                                     <@ if @{:i} <= 1 @>
                                         <@ foreach in filelist @>
