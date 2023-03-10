@@ -68,8 +68,8 @@
                                     </div>
                                 <@ end @>
                             <@ else @>
-                                <@ with @{imageFeatured_01} {width: 300} @>
-                                    <@ set { ":small": @{ :fileResized } } @>
+                                <@ with @{imageFeatured_01} {width: 50} @>
+                                    <@ set { ":xsmall": @{ :fileResized } } @>
                                     <@ set {":thumbHeight": @{:height}} @>
                                     <@ set {":thumbWidth": @{:width}} @>
                                 <@ end @>
@@ -77,6 +77,7 @@
                                         <div class="ratio-box" style="padding-bottom: calc(@{:thumbHeight} / @{:thumbWidth} * 100%)">
                                             <img class="project-thumbnail lazyload"
                                             data-src="@{:file}"
+                                            src="@{:xsmall}"
                                             ></img>
                                         </div>
                                 <@ end @>
