@@ -33,6 +33,9 @@
                     <div class="project-image">
                         <a href="@{url}">
                             <@ if not @{checkboxIsGif} @>
+                                <@ with @{imageFeatured_01} {width: 100} @>
+                                    <@ set { ":xsmall": @{ :fileResized } } @>
+                                <@ end @>
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <@ set { ":small": @{ :fileResized } } @>
                                 <@ end @>
@@ -49,13 +52,14 @@
                                 <@ with @{imageFeatured_01} {width: 300} @>
                                     <noscript class="loading-lazy">
                                         <img 
-                                            class="project-thumbnail"
-                                            srcset=
+                                            class="project-thumbnail lazyload"
+                                            data-srcset=
                                                 "@{:small} 1x,
                                                 @{:medium} 2x,
                                                 @{:large} 3x,
                                                 @{:xlarge} 4x"
-                                            src="@{ :file }" 
+                                            data-src="@{ :file }" 
+                                            src="@{:xsmall}
                                             alt="@{ :caption }"
                                             <@ if @{ :position } <= 5 @>
                                                 loading="lazy"
