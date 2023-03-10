@@ -370,7 +370,6 @@ font-size: 1.5rem;
     --bg-h: 100%;
     font-weight: 450;
     color: #000;
-    text-shadow: 0 3px 3px #ffffff;
   }
 .project-page .content a:where(:hover, :focus-visible) {
 background-size: 100% var(--bg-h);
@@ -378,7 +377,7 @@ background-position-x: left;
 }
 
 .project-page .content a {
-padding-bottom: 0px;
+padding-bottom: 3px;
 --bg-h: 3px;
 }
 
