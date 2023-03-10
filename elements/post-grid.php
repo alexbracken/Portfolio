@@ -32,7 +32,7 @@
                 <article class="project-container">
                     <div class="project-image">
                         <a href="@{url}">
-                            <@ if not @{checkboxIsGif} @>
+                            <@ if @{checkboxIsGif} != 1 @>
                                 <@ with @{imageFeatured_01} {width: 100} @>
                                     <@ set { ":xsmall": @{ :fileResized } } @>
                                 <@ end @>
@@ -68,7 +68,7 @@
                                     </div>
                                 <@ end @>
                             <@ end @>
-                            <@ if @{checkboxIsGif} @>
+                            <@ if @{checkboxIsGif} = 1 @>
                                 <@ foreach in filelist @>
                                     <@ if @{:i} >= 1 @>
                                         <div class="ratio-box" style="padding-bottom: calc(@{:height} / @{:width} * 100%)">
