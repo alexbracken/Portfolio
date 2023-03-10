@@ -281,6 +281,10 @@ am-img img{
     transform: scale(105%);
 }
 
+.project-info .tag{
+    cursor: pointer;
+}
+
 
 .navbar-brand span{
     font-weight: 800;
