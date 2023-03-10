@@ -20,7 +20,7 @@
                 <span class="letter">t</span>
             </h1>
         </section>
-        <section>
+        <section class="section content">
             @{ textAbout }
         </section>
 
